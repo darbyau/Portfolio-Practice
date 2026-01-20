@@ -1,3 +1,15 @@
+#home {
+  min-height: 100vh;
+  padding-bottom: 70px;
+
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+   z-index: 1000;
+}
 nav a {
   text-decoration: none;
   color: var(--light);
@@ -14,8 +26,7 @@ nav a:hover {
 
 .nav-list {
   background-color: rgba(105, 91, 182, 0.18);
-  box-shadow: ;
-  
+
   border-radius: 30px;
   width: fit-content;
   /* max-width: 401px; */
@@ -33,9 +44,9 @@ nav a:hover {
 }
 
 .name {
-  text-align: left;
-  /* border: 1px solid greenyellow; */
-  padding-top: 4%;
+  /* text-align: left;
+  border: 1px solid greenyellow; */
+  padding-top: 12%;
   padding-left: 5%;
 }
 
@@ -71,7 +82,7 @@ nav a:hover {
 
 .hero button {
   margin-top: 24px;
-  background-color:  rgba(105, 91, 182,.18);
+  background-color: rgba(105, 91, 182, 0.18);
   color: var(--light);
   /* border: 1px solid rgba(105, 91, 182,.42); */
   border: 1px solid var(--light);
@@ -82,9 +93,11 @@ nav a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: background-color  0.3s, color 0.3s, background-color 0.15s, transform 0.15s, border-style 0.15s, color .15s; 
+  transition: background-color 0.3s, color 0.3s, background-color 0.15s,
+    transform 0.15s, border-style 0.15s, color 0.15s;
   align-self: center;
-  box-shadow: -10px -10px 50px rgba(105, 91, 182,.28),inset 0px 10px 50px rgba(255, 255, 255, 0.2);
+  box-shadow: -10px -10px 50px rgba(105, 91, 182, 0.28),
+    inset 0px 10px 50px rgba(255, 255, 255, 0.2);
 }
 .hero button:hover {
   background-color: var(--light);
@@ -94,11 +107,16 @@ nav a:hover {
 .hero button:active {
   transform: scale(0.98);
   color: var(--light);
-  background-color: rgba(105, 91, 182,.42);
- border-style: solid; /* keep border solid */
+  background-color: rgba(105, 91, 182, 0.42);
+  border-style: solid; /* keep border solid */
   outline: 2px dashed var(--light); /* adds dashed on top */
-    outline-offset: 6px; /* space between border and outline */
+  outline-offset: 6px; /* space between border and outline */
 }
+
+/* .hero button:active .material-symbols-outlined {
+  background-color: transparent;
+  color:var(--light);
+} */
 
 .material-symbols-outlined {
   color: var(--dark);

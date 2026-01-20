@@ -6,6 +6,8 @@
     <title>Darby A | Portfolio</title>
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <script src="js/script.js" defer ></script> defer to load after html
     <!-- Google Fonts: Inter & Newsreader -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,11 +23,12 @@
     />
   </head>
   <body>
-    <header>
+<section id="home">
+        <header>
       <nav>
         <ul class="nav-list">
-          <li><a href="#Home">Home</a></li>
-          <li><a href="#About">About</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
           <li><a href="#Projects">Projects</a></li>
           <li><a href="#Experience">Experience</a></li>
           <li><a href="#Contact">Contact</a></li>
@@ -45,8 +48,8 @@
     <section class="hero-section">
       <div class="hero">
         <h1>
-           Welcome. Let’s make
-        <em>something people actually enjoy</em> using. 
+          Welcome. Let’s make
+          <em>something people actually enjoy</em> using.
         </h1>
         <button>
           Let's Connect<span class="material-symbols-outlined">
@@ -58,7 +61,7 @@
 
     <section class="contact-icons">
       <a href="" target="_blank" aria-label="GitHub">
-        <img src="resources/GitHub.svg" alt="GitHub" />     
+        <img src="resources/GitHub.svg" alt="GitHub" />
       </a>
       <a href="" aria-label="Email">
         <img src="resources/Mail.svg" alt="Email" />
@@ -67,5 +70,63 @@
         <img src="resources/LinkedIn.svg" alt="LinkedIn" />
       </a>
     </section>
-  </body>
+</section>
+
+    <section id="about">
+      <h1>Hello</h1>
+
+      <section class="about-skills">
+        <div class="column about">
+            
+          <h3>(ABOUT)</h3>
+          <p>
+            I’m a self-taught designer and developer who enjoys tackling
+            challenging problems with creative solutions. I build thoughtful,
+            user-focused websites and interfaces, combining design,
+            functionality, and performance to create experiences that truly
+            resonate.  I aim to contribute to impactful projects that make a
+            difference in users’ lives, turning ideas into intuitive, meaningful
+            digital experiences. Every project is an opportunity to solve a
+            problem, craft a story, and create something people enjoy using.
+          </p>
+        </div>
+
+        <div class="column skills">
+          <h3>(SKILLS)</h3>
+
+          <div class="skills-group">
+            <h4>Languages & Tools</h4>
+            <ul>
+              <li class="skill-item">
+                <img src="resources/js.svg" />JavaScript
+              </li>
+              <li class="skill-item"><img src="resources/py.svg" />Python</li>
+              <li class="skill-item">
+                <img src="resources/node.svg" />Node.js
+              </li>
+              <li class="skill-item"><img src="resources/git.svg" />Git</li>
+            </ul>
+          </div>
+
+          <div class="skills-group">
+            <h4>Frameworks & Libraries</h4>
+            <ul>
+              <li class="skill-item"><img src="resources/react.svg" />React</li>
+              <li class="skill-item">
+                <img src="resources/tailwind.svg" />Tailwind CSS
+              </li>
+              <li class="skill-item">  <img src="resources/gsap.svg" />GSAP</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+
+    <div class="status">
+        <div class="status-bubble">Status</div>
+        <h4>Building web projects · Exploring AI & automation</h4>
+    </div>
+    </section>
+    <!-- <div style="height: 9999px;"></div> --> <!-- For scrolling  purposes and keeping view fixed when editing  -->
+</body>
 </html>
