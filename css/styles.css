@@ -1,0 +1,43 @@
+nav a {
+  text-decoration: none;
+  color: var(--light);
+  transition: background-color 0.3s, color 0.3s;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 12px 15px;
+  /* border: 1px solid yellow; */
+}
+nav a:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.nav-list {
+  background-color: rgba(105, 91, 182, 0.18);
+  border-radius: 30px;
+  width: fit-content;
+  /* max-width: 401px; */
+  /* height: 51px; */
+  margin: 33px auto 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* gap: 26px; */
+
+  list-style: none;
+  padding: 0.5rem 0rem;
+  /* border: 1px solid rgb(0, 255, 242); */
+}
+
+.name {
+  text-align: left;
+  border: 1px solid greenyellow;
+  margin: 84px 0px 0px 96px;
+}
+
+.hero {
+  text-align: left;
+  font-size: 24px;
+  margin: 120px 0px 0px 96px;
+}
